@@ -1,10 +1,13 @@
 let splitting = document.getElementsByName("splitting")
 let jahr = document.getElementById("jahr")
+let kirche = document.getElementById("kirche")
 let betragVorSteuer = document.getElementById("betragVorSteuer")
 let steuerBetrag = document.getElementById("steuerBetrag")
 let anteil = document.getElementById("anteil")
+let kirchenAnteil = document.getElementById("kirchenAnteil")
 
 let steuern = function(){
+    console.log(kirche.options[0].selected)
     switch(splitting[0].checked){
         case true:
             switch(jahr.options[0].selected){
@@ -136,6 +139,17 @@ let steuern = function(){
                     }
             }
     }
-    anteil.innerHTML = betragVorSteuer.value - taxes.toFixed(2)+"€"
+    if(splitting[0].checked == false && splitting[1].checked == false){
+        return alert("Bitte Tarif auswählen!")
+    }
+    if(kirche.options[0].selected == true){
+        anteil.innerHTML = betragVorSteuer.value - taxes.toFixed(2)+"€"
+    } else if(kirche.options[1].selected == true){
+        anteil.innerHTML = betragVorSteuer.value - (taxes*1.08).toFixed(2)+"€"
+        kirchenAnteil.innerHTML = (taxes*0.08).toFixed(2)+"€"
+    }   else{
+        anteil.innerHTML = betragVorSteuer.value - (taxes*1.09).toFixed(2)+"€"
+        kirchenAnteil.innerHTML = (taxes*0.09).toFixed(2)+"€"
+    }
     steuerBetrag.innerHTML = taxes.toFixed(2)+"€"
 }

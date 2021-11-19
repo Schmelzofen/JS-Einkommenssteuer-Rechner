@@ -40,10 +40,10 @@
           </div>
           <div class="block1-4">
             <label for="kirche">Kirchensteuer:</label>
-            <select name="kirche" id="">
-              <option value="">kein Mitglied</option>
-              <option value="">8% (Bayern, BaWü)</option>
-              <option value="">9% (übrige)</option>
+            <select name="kirche" id="kirche">
+              <option value="0">kein Mitglied</option>
+              <option value="1">8% (Bayern, BaWü)</option>
+              <option value="2">9% (übrige)</option>
             </select>
           </div>
           <button onclick="steuern()">Auswerten</button>
@@ -53,6 +53,8 @@
           <p id="anteil">0,00€</p>
           <h2>Unsere "Krümmel":</h2>
           <p id="steuerBetrag">0,00€</p>
+          <h2>Kirchensteuer:</h2>
+          <p id="kirchenAnteil">0,00€</p>
         </div>
       </section>
     </main>

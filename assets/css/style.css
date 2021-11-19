@@ -32,6 +32,7 @@ p{
     border-radius: 10px;
     background-color:seagreen;
     margin: 0 0 1rem 3rem;
+    text-align: left;
 }
 
 .block1 button{
@@ -91,11 +92,15 @@ button:active{
 }
 
 .block2 h2:nth-of-type(1){
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 1.5rem 0;
 }
 
 .block2 h2:nth-of-type(2){
-    padding: 1rem 0;
+    padding: 1rem 0 1.5rem 0;
+}
+
+.block2 h2:nth-of-type(3){
+    padding: 1rem 0 1.5rem 0;
 }
 
 #radio1{
