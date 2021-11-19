@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color:bisque;
+    height: 100vh;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    padding: 0 0 1rem 0;
+    text-decoration: underline;
+}
+
+p{
+    display: inline;
+    padding: 0 1rem;
+    margin: 0 0 1rem 3rem;
+    border: 1px solid white;
+    
+}
+
+.block1 button{
+    padding: 2% 5%;
+    border-radius: 10px;
+    border: none;
+    background-color:salmon;
+    box-shadow: 0px 0px 5px 1px;
+    margin: 1rem 0 0 12rem;
+}
+
+.block1 h1{
+    text-align: center;
+    padding: 0 0 1.5rem 0;
+}
+
+.block1-1 label{
+    display: inline-block;
+    padding: 0 2rem 1rem 0;
+}
+
+.block1-1 input{
+    border: none;
+    padding: .2rem 0;
+}
+
+.block1-2{
+    display: flex;
+}
+
+.block1-2 div{
+    display: flex;
+}
+
+.block1-2 label{
+    padding: 0 3rem 1rem 0;
+
+}
+
+.block1-3 label{
+    padding: 0 10rem 0rem 0;
+}
+
+#radio1{
+    margin: 0 1rem 0 0;
+    
+}
+
+#radio2{
+    margin: 0 1rem 0 0;
+}
