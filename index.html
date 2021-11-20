@@ -9,73 +9,78 @@
   </head>
   <body>
     <main>
-      <img src="./assets/img/14_macmall.gif" alt="macMall">
       <aside class="aside1">
-
+        <img src="./assets/img/win.gif" alt="windows">
+        <img src="./assets/img/jesus-bailando.gif" alt="dancingjesus">
       </aside>
-      <section>
-        <form action="" onsubmit="return false">
-          <div class="block1">
-            <h1>Berechne deine Einkommensteuer!</h1>
-            <div class="block1-1">
-              <label for="">Jahresbruttogehalt angeben:</label>
-              <input
-                type="text"
-                name=""
-                id="betragVorSteuer"
-                placeholder="Betrag eingeben!"
-              />
+      <article class="img-wrapper">
+        <img src="./assets/img/14_macmall.gif" alt="macMall">
+        <section>
+          <form action="" onsubmit="return false">
+            <div class="block1">
+              <h1>Berechne deine Einkommensteuer!</h1>
+              <div class="block1-1">
+                <label for="">Jahresbruttogehalt:</label>
+                <span>
+                  <input
+                    type="text"
+                    name=""
+                    id="betragVorSteuer"
+                    placeholder="Betrag eingeben!"
+                  />
+                </span>
+              </div>
+              <div class="block1-2">
+                <label for="">Grund- oder Splittingtarif?</label>
+                <div>
+                  <input type="radio" name="splitting" id="radio1" />
+                  <label for="radio1">GT</label>
+                  <input type="radio" name="splitting" id="radio2" />
+                  <label for="radio2">ST</label>
+                </div>
+              </div>
+              <div class="block1-3">
+                <label for="">Jahr:</label>
+                <select name="jahr" id="jahr">
+                  <option value="0" name="jahr">2021</option>
+                  <option value="1" name="jahr">2020</option>
+                  <option value="2" name="jahr">2019</option>
+                </select>
+              </div>
+              <div class="block1-4">
+                <label for="kirche">Kirchensteuer:</label>
+                <select name="kirche" id="kirche">
+                  <option value="0">kein Mitglied</option>
+                  <option value="1">8% (Bayern, BaWü)</option>
+                  <option value="2">9% (übrige)</option>
+                </select>
+              </div>
+              <button id="button" onclick="steuern()">Auswerten</button>
             </div>
-            <div class="block1-2">
-              <label for="">Grund- oder Splittingtarif?</label>
-              <div>
-                <input type="radio" name="splitting" id="radio1" />
-                <label for="radio1">GT</label>
-                <input type="radio" name="splitting" id="radio2" />
-                <label for="radio2">ST</label>
+            <div class="block2">
+              <div class="block2-1">
+                <h2>Gehalt abzgl. der Steuer:</h2>
+                <p id="anteil">0,00€</p>
+                <h2>Einkommensteuer:</h2>
+                <p id="steuerBetrag">0,00€</p>
+                <h2>Kirchensteuer:</h2>
+                <p id="kirchenAnteil">0,00€</p>
+              </div>
+              <div class="block2-2">
+                <img
+                src="./assets/img/c9a082bbb69eae62df8920809b4eb067.gif"
+                alt="ralphwiggum"
+                id="simpsons"
+                class="simpsons"
+                />
               </div>
             </div>
-            <div class="block1-3">
-              <label for="">Jahr auswählen:</label>
-              <select name="jahr" id="jahr">
-                <option value="0" name="jahr">2021</option>
-                <option value="1" name="jahr">2020</option>
-                <option value="2" name="jahr">2019</option>
-              </select>
-            </div>
-            <div class="block1-4">
-              <label for="kirche">Kirchensteuer:</label>
-              <select name="kirche" id="kirche">
-                <option value="0">kein Mitglied</option>
-                <option value="1">8% (Bayern, BaWü)</option>
-                <option value="2">9% (übrige)</option>
-              </select>
-            </div>
-            <button id="button" onclick="steuern()">Auswerten</button>
-          </div>
-          <div class="block2">
-            <div class="block2-1">
-              <h2>Deine Beute:</h2>
-              <p id="anteil">0,00€</p>
-              <h2>Unsere "Krümmel":</h2>
-              <p id="steuerBetrag">0,00€</p>
-              <h2>Kirchensteuer:</h2>
-              <p id="kirchenAnteil">0,00€</p>
-            </div>
-            <div class="block2-2">
-              <img
-              src="./assets/img/c9a082bbb69eae62df8920809b4eb067.gif"
-              alt="ralphwiggum"
-              id="simpsons"
-              class="simpsons"
-              />
-            </div>
-          </div>
-        </section>
-        <img src="./assets/img/08_M0RIA9JO.gif" alt="mall">
+          </section>
+          <img src="./assets/img/08_M0RIA9JO.gif" alt="mall">
+        </article>
         <aside class="aside2">
           <img src="./assets/img/pizza.gif" alt="pizzaHut">
-          <img src="./assets/img/jesus-bailando.gif" alt="dancingjesus">
+          <img src="./assets/img/gbanner.gif" alt="millionaire">
         </aside>
     </main>
     <script src="./assets/js/main.js"></script>
