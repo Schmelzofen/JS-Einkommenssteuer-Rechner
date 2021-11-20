@@ -163,6 +163,7 @@ let steuern = function(){
     }
     if(kirche.options[0].selected == true){
         anteil.innerHTML = (betragVorSteuer.value - steuerAbzug).toFixed(2)+"€"
+        kirchenAnteil.innerHTML = "0,00€"
     } else if(kirche.options[1].selected == true){
         anteil.innerHTML = betragVorSteuer.value - (steuerAbzug*1.08).toFixed(2)+"€"
         kirchenAnteil.innerHTML = (steuerAbzug*0.08).toFixed(2)+"€"
