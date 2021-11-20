@@ -12,9 +12,9 @@ main{
     font-family: Roboto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 section{
@@ -43,7 +43,7 @@ p{
     border: none;
     background-color:salmon;
     box-shadow: 0px 0px 5px 1px;
-    margin: 1rem 0 0 8.5rem;
+    margin: 1rem 0 0 13rem;
     font-size: 1rem;
     transition: .2s ease-in-out;
 
@@ -93,6 +93,10 @@ button:active{
     padding: 0 6rem 0 0;
 }
 
+.block2{
+    display: flex;
+}
+
 .block2 h2:nth-of-type(1){
     padding: 1rem 0 1.5rem 0;
 }
@@ -115,10 +119,13 @@ button:active{
 }
 
 .simpsons{
-    position: absolute;
-    height: 400px;
-    right: 100px;
-    bottom: 40px;
+    height: 200px;
     transition: opacity 1s linear;
     opacity: 0;
+    padding: 3rem 0 0 1rem;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
 }

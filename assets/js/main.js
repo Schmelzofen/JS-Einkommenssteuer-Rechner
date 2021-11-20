@@ -11,7 +11,7 @@ let button = document.getElementById("button")
 
 const target = document.getElementById("simpsons");
 button.addEventListener('click', () => target.style.opacity = '1');
-simpsons.addEventListener('transitionend', () => target.style.opacity = '0');
+target.addEventListener('transitionend', () => target.style.opacity = '0');
 
 let steuern = function(){
     switch(splitting[0].checked){
@@ -162,7 +162,7 @@ let steuern = function(){
         return alert("Bitte Tarif auswählen!")
     }
     if(kirche.options[0].selected == true){
-        anteil.innerHTML = betragVorSteuer.value - steuerAbzug.toFixed(2)+"€"
+        anteil.innerHTML = (betragVorSteuer.value - steuerAbzug).toFixed(2)+"€"
     } else if(kirche.options[1].selected == true){
         anteil.innerHTML = betragVorSteuer.value - (steuerAbzug*1.08).toFixed(2)+"€"
         kirchenAnteil.innerHTML = (steuerAbzug*0.08).toFixed(2)+"€"
@@ -170,9 +170,6 @@ let steuern = function(){
         anteil.innerHTML = betragVorSteuer.value - (steuerAbzug*1.09).toFixed(2)+"€"
         kirchenAnteil.innerHTML = (steuerAbzug*0.09).toFixed(2)+"€"
     }
-    if(Number(steuerAbzug.value) < 0){
-        steuerBetrag.innerHTML = steuerAbzug - steuerAbzug
-    } else{
-        steuerBetrag.innerHTML = steuerAbzug.toFixed(2)+"€"
-    }
+
+    steuerBetrag.innerHTML = steuerAbzug.toFixed(2)+"€"
 }
