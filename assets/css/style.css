@@ -134,7 +134,7 @@ img{
     max-width: 100%;
 }
 
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 414px){
     /* main{
         flex-wrap: nowrap;
         flex-direction: row;
