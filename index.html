@@ -10,28 +10,28 @@
   <body>
     <main>
       <aside class="aside1">
-        <img src="./assets/img/win.gif" alt="windows">
-        <img src="./assets/img/jesus-bailando.gif" alt="dancingjesus">
+        <img src="./assets/img/win.gif" alt="windows" />
+        <img src="./assets/img/jesus-bailando.gif" alt="dancingjesus" />
       </aside>
       <article class="img-wrapper">
-        <img src="./assets/img/14_macmall.gif" alt="macMall">
+        <img src="./assets/img/14_macmall.gif" alt="macMall" />
         <section>
-          <form action="" onsubmit="return false">
+          <form action="steuernBerechnen" onsubmit="return false">
             <div class="block1">
               <h1>Berechne deine Einkommensteuer!</h1>
               <div class="block1-1">
-                <label for="">Jahresbruttogehalt:</label>
+                <label for="jahr">Jahresbruttogehalt:</label>
                 <span>
                   <input
                     type="text"
-                    name=""
+                    name="betragVorSteuer"
                     id="betragVorSteuer"
                     placeholder="Betrag eingeben!"
                   />
                 </span>
               </div>
               <div class="block1-2">
-                <label for="">Grund- oder Splittingtarif?</label>
+                <label for="radio1">Grund- oder Splittingtarif?</label>
                 <div>
                   <input type="radio" name="splitting" id="radio1" />
                   <label for="radio1">GT</label>
@@ -40,11 +40,11 @@
                 </div>
               </div>
               <div class="block1-3">
-                <label for="">Jahr:</label>
+                <label for="jahr">Jahr:</label>
                 <select name="jahr" id="jahr">
-                  <option value="0" name="jahr">2021</option>
-                  <option value="1" name="jahr">2020</option>
-                  <option value="2" name="jahr">2019</option>
+                  <option value="0">2021</option>
+                  <option value="1">2020</option>
+                  <option value="2">2019</option>
                 </select>
               </div>
               <div class="block1-4">
@@ -68,20 +68,21 @@
               </div>
               <div class="block2-2">
                 <img
-                src="./assets/img/c9a082bbb69eae62df8920809b4eb067.gif"
-                alt="ralphwiggum"
-                id="simpsons"
-                class="simpsons"
+                  src="./assets/img/c9a082bbb69eae62df8920809b4eb067.gif"
+                  alt="ralphwiggum"
+                  id="simpsons"
+                  class="simpsons"
                 />
               </div>
             </div>
-          </section>
-          <img src="./assets/img/08_M0RIA9JO.gif" alt="mall">
-        </article>
-        <aside class="aside2">
-          <img src="./assets/img/pizza.gif" alt="pizzaHut">
-          <img src="./assets/img/gbanner.gif" alt="millionaire">
-        </aside>
+          </form>
+        </section>
+        <img src="./assets/img/08_M0RIA9JO.gif" alt="mall" />
+      </article>
+      <aside class="aside2">
+        <img src="./assets/img/pizza.gif" alt="pizzaHut" />
+        <img src="./assets/img/gbanner.gif" alt="millionaire" />
+      </aside>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
